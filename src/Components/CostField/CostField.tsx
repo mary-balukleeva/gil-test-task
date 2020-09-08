@@ -12,17 +12,16 @@ export default function CostField() {
   }
 
   const onCostChange = (value: string) => {
-    // validation
+    const valueExistDot = value.match(/\./g)!;
+    const dotOnEnd = value[value.length-1] === '.';
 
-    let number: number;
-    // if (isDecimalPart && 1) {
-    //   number[value.length] = value[value.length-1];
-    //   number[value.length] = value[value.length-1];
-    // }
+    if (valueExistDot && valueExistDot.length > 1) { return; }
 
+    if (value && valueExistDot && valueExistDot.length && dotOnEnd) {
+      return setCost(value);
+    }
 
-    number = +value.replace(/[^\d\.]/g, '');
-
+    const number: number = +value.replace(/[^\d\.]/g, '');
     setCost(formatCurrency(number));
   }
 

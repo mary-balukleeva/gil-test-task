@@ -91,6 +91,7 @@ button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined:disabled {
 
 #cost-input {
   font-weight: 600;
+  padding-right: 30px;
 }
 
 .MuiFormControl-root.MuiTextField-root > label.MuiFormLabel-root.MuiInputLabel-root {

@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/gil-test-task/static/css/main.0388dc9f.chunk.css",
+    "main.js": "/gil-test-task/static/js/main.bbc8c034.chunk.js",
+    "main.js.map": "/gil-test-task/static/js/main.bbc8c034.chunk.js.map",
+    "runtime-main.js": "/gil-test-task/static/js/runtime-main.bbcbfbe6.js",
+    "runtime-main.js.map": "/gil-test-task/static/js/runtime-main.bbcbfbe6.js.map",
+    "static/js/2.a89ab60e.chunk.js": "/gil-test-task/static/js/2.a89ab60e.chunk.js",
+    "static/js/2.a89ab60e.chunk.js.map": "/gil-test-task/static/js/2.a89ab60e.chunk.js.map",
+    "index.html": "/gil-test-task/index.html",
+    "precache-manifest.5ffb3f87005e7be6d011fedaf1d50e2c.js": "/gil-test-task/precache-manifest.5ffb3f87005e7be6d011fedaf1d50e2c.js",
+    "service-worker.js": "/gil-test-task/service-worker.js",
+    "static/css/main.0388dc9f.chunk.css.map": "/gil-test-task/static/css/main.0388dc9f.chunk.css.map",
+    "static/js/2.a89ab60e.chunk.js.LICENSE.txt": "/gil-test-task/static/js/2.a89ab60e.chunk.js.LICENSE.txt",
+    "static/media/arrow_left.svg": "/gil-test-task/static/media/arrow_left.48bd8f7d.svg",
+    "static/media/arrow_right.svg": "/gil-test-task/static/media/arrow_right.845e73a4.svg",
+    "static/media/index.css": "/gil-test-task/static/media/card-baack.907458b4.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bbcbfbe6.js",
+    "static/js/2.a89ab60e.chunk.js",
+    "static/css/main.0388dc9f.chunk.css",
+    "static/js/main.bbc8c034.chunk.js"
+  ]
+}

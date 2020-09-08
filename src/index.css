@@ -5,9 +5,64 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #ddfffd;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App {
+  margin-top: 10rem;
+}
+
+.MuiPaper-root {
+  padding-bottom: 30px;
+}
+
+.cardList {
+  max-width: 1320px;
+}
+
+button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined {
+  background: white;
+}
+
+button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined:disabled {
+  background: transparent;
+}
+
+.active {
+  display: block;
+  margin: 0 15px;
+  width: 360px; 
+}
+
+.slide {
+  display: none;
+}
+
+.Rectangle {
+  width: 100%;
+  height: 142.7px;
+  border-radius: 15px;
+  background-image: linear-gradient(to top, #3eaa08 131%, #399909 102%, #4cdb04 15%);
+}
+
+.backArrow {
+  display: flex;
+  align-items: center;
+}
+
+.Arrow {
+  width: 50px;
+}
+
+.arrowBtn {
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  border-radius: 9px;
+  background-color: rgba(9, 2, 36, 0.1);
 }

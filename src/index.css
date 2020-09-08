@@ -18,6 +18,8 @@ code {
 
 .cardList {
   max-width: 1320px;
+  display: flex;
+  justify-content: space-between;
 }
 .backArrow > button.MuiButtonBase-root {
   width: 60px;
@@ -104,6 +106,7 @@ button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined:disabled {
 .backArrow {
   display: flex;
   align-items: center;
+  margin: 0 auto;
 }
 
 .Arrow {
@@ -171,6 +174,7 @@ button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined:disabled {
 .MuiPaper-root.MuiCard-root  {
   height: 440px;
   position: relative;
+  margin: 0 auto;
 }
 
 .switchBlock {

@@ -1,10 +1,5 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   background-color: #ddfffd;
 }
 
@@ -24,13 +19,29 @@ code {
 .cardList {
   max-width: 1320px;
 }
+.backArrow > button.MuiButtonBase-root {
+  width: 60px;
+  height: 60px;
+  border: none;
+}
+
+.backArrow > button.MuiButtonBase-root {
+  width: 60px;
+  height: 60px;
+  border: none;
+}
 
 button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined {
   background: white;
+  transition: all ease .3s;
+}
+
+button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined:hover {
+  background-color: #32207e;
 }
 
 button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined:disabled {
-  background: transparent;
+  background-color: rgba(9, 2, 36, 0.1);
 }
 
 .active {
@@ -43,11 +54,51 @@ button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined:disabled {
   display: none;
 }
 
+.MuiSwitch-input {
+  background-color: blue !important;
+  color: blue !important;
+}
+
 .Rectangle {
+  background-image: url('./assets//images/card-baack.png');
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 100%;
   height: 142.7px;
-  border-radius: 15px;
-  background-image: linear-gradient(to top, #3eaa08 131%, #399909 102%, #4cdb04 15%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.summaryBlock {
+  color: white;
+  text-align: left;
+  width: 220px;
+  margin: 0 46px 0 auto;
+  text-align-last: left;
+}
+
+.summaryBlock .summary {
+  font-size: 40px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+.summaryBlock .summary-description {
+  margin-top: 0;
+  font-size: 20px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -1px;
+}
+
+.summaryBlock svg {
+  transform: scale(1.7);
 }
 
 .backArrow {
@@ -67,10 +118,87 @@ button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined:disabled {
   background-color: rgba(9, 2, 36, 0.1);
 }
 
+.MuiPaper-root.MuiCard-root .chooseBtn {
+  width: 80%;
+  height: 60px;
+  padding: 20px auto;
+  background-color: #32207e;
+  font-size: 13px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.6px;
+}
+
+.cardInner {
+  width: 220px;
+  margin: 0 30px 0 auto;
+  text-align-last: left;
+}
+
+.cardInner .note {
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: rgba(9, 2, 36, 0.5);
+}
+
+.MuiCardContent-root .title {
+  font-size: 32px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.5px;
+  color: #3cb400;
+  margin: 0;
+}
+
+.MuiCardContent-root .subtitle {
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: rgba(9, 2, 36, 0.5);
+  margin: 0;
+}
+
+.MuiPaper-root.MuiCard-root  {
+  height: 440px;
+  position: relative;
+}
+
+.switchBlock {
+  margin-top: auto;
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: rgba(9, 2, 36, 0.5);
+}
+
+.controlBlock {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  left: 15px;
+}
+
 .costFieldWrapper {
   background-color: #fff;
   width: 50%;
-  margin: 10rem auto;
+  margin: 2rem auto;
   padding: 20px 0;
 }
 
@@ -86,8 +214,6 @@ button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined:disabled {
   top: 15px;
   bottom: 15px;
 }
-
-
 
 #cost-input {
   font-weight: 600;

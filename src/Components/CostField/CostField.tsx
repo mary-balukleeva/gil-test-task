@@ -21,7 +21,7 @@ export default function CostField() {
       return setCost(value);
     }
 
-    const number: number = +value.replace(/[^\d\.]/g, '');
+    const number: number = +value.replace(/[^\d.]/g, '');
     setCost(formatCurrency(number));
   }
 

@@ -66,3 +66,38 @@ button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined:disabled {
   border-radius: 9px;
   background-color: rgba(9, 2, 36, 0.1);
 }
+
+.costFieldWrapper {
+  background-color: #fff;
+  width: 50%;
+  margin: 10rem auto;
+  padding: 20px 0;
+}
+
+.cost-form {
+  position: relative;
+  margin: 0 auto;
+  width: 247px;
+}
+
+.cost-form svg {
+  position: absolute;
+  right: 5px;
+  top: 15px;
+  bottom: 15px;
+}
+
+
+
+#cost-input {
+  font-weight: 600;
+}
+
+.MuiFormControl-root.MuiTextField-root > label.MuiFormLabel-root.MuiInputLabel-root {
+  color: black;
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  color: black;
+  border-color: black;
+}

@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-
 import { cards } from '../../assets/mockData';
 import CardItem from '../CardItem/CardItem';
 import LeftArrow from './Arrows/LeftArrow';

@@ -146,6 +146,7 @@ button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined:disabled {
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
+  text-align: justify;
   color: rgba(9, 2, 36, 0.5);
 }
 
@@ -202,6 +203,7 @@ button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined:disabled {
 .costFieldWrapper {
   background-color: #fff;
   width: 50%;
+  min-width: 300px;
   margin: 2rem auto;
   padding: 20px 0;
 }

@@ -6,7 +6,7 @@ export default function CostField() {
   const [cost, setCost] = useState('');
 
   const formatCurrency = (value: number): string => {
-    const format = new Intl.NumberFormat();
+    const format = new Intl.NumberFormat('en-us');
 
     return format.format(value);
   }
@@ -22,6 +22,7 @@ export default function CostField() {
     }
 
     const number: number = +value.replace(/[^\d.]/g, '');
+
     setCost(formatCurrency(number));
   }
 

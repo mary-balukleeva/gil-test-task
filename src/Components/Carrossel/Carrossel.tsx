@@ -1,17 +1,14 @@
 import React, {useState} from 'react';
 
 import { cards } from '../../assets/mockData';
-// import CardItem from '../CardItem/CardItem';
+import CardItem from '../CardItem/CardItem';
 import LeftArrow from './Arrows/LeftArrow';
 import RightArrow from './Arrows/RightArrow';
 
 import './Carroussel.css';
-
 function Carrossel(props: any) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [cardsLength] = useState(cards.length);
-
-  const [areDisabledBtns, setAreDisabledBtns] = useState({left: true, right: false});
 
   const goToPrevSlide = () => {
     if (activeIndex) {
@@ -30,7 +27,7 @@ function Carrossel(props: any) {
       <LeftArrow goToPrevSlide={goToPrevSlide} activeIndex={activeIndex} />
 
       {cards.map((card, index) => 
-        <div style={{width: 300, height: 400, background: 'white', margin: '0 15px'}} key={index} />
+        <CardItem card={card} key={index} index={index} activeIndex={activeIndex} />
       )}
 
       <RightArrow goToNextSlide={goToNextSlide} activeIndex={activeIndex} cardsLength={cardsLength} />

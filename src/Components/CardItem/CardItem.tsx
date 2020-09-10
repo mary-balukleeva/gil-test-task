@@ -33,12 +33,11 @@ const AntSwitch = withStyles((theme: Theme) =>
     root: {
       width: 30,
       height: 20,
-      margin: 2,
-      padding: 2,
+      padding: 0,
       display: 'flex',
     },
     switchBase: {
-      padding: 4,
+      padding: 2,
       color: theme.palette.grey[500],
       '&$checked': {
         transform: 'translateX(10px)',
@@ -51,13 +50,12 @@ const AntSwitch = withStyles((theme: Theme) =>
       },
     },
     thumb: {
-      width: 12,
-      height: 12,
+      width: 16,
+      height: 16,
       boxShadow: 'none',
       backgroundColor: 'white',
     },
     track: {
-      // border: `1px solid ${theme.palette.grey[500]}`,
       borderRadius: 10,
       opacity: 1,
       backgroundColor: 'grey',
@@ -65,7 +63,6 @@ const AntSwitch = withStyles((theme: Theme) =>
     checked: {},
   }),
 )(Switch);
-
 
 export default function CardItem(props: any) {
   const { card, index, activeIndex } = props;

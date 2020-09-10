@@ -2,6 +2,7 @@ import React from 'react';
 import Button from '@material-ui/core/Button';
 
 import arrow from '../../../assets/images/arrow_right.svg';
+import './Arrow.css';
 
 const RightArrow = (props: any) => {
   const {goToNextSlide, activeIndex, cardsLength} = props;

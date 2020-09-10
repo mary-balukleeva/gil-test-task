@@ -2,6 +2,7 @@ import React from 'react';
 import Button from '@material-ui/core/Button';
 
 import arrow from '../../../assets/images/arrow_left.svg';
+import './Arrow.css';
 
 const LeftArrow = (props: any) => {
   const {goToPrevSlide, activeIndex} = props;

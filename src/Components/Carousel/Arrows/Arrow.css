@@ -1,0 +1,49 @@
+.backArrow > button.MuiButtonBase-root {
+  width: 60px;
+  height: 60px;
+  border: none;
+}
+
+.backArrow > button.MuiButtonBase-root {
+  width: 60px;
+  height: 60px;
+  border: none;
+}
+
+button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined {
+  background: white;
+  transition: all ease .3s;
+}
+
+button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined:hover {
+  background-color: #32207e;
+}
+
+button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined:disabled {
+  background-color: rgba(9, 2, 36, 0.1);
+}
+
+.backArrow {
+  display: flex;
+  align-items: center;
+}
+
+.backArrow:first-of-type {
+  margin: 0 15px 0 0;
+}
+
+.backArrow:last-of-type {
+  margin: 0 0 0 15px;
+}
+
+.Arrow {
+  width: 50px;
+}
+
+.arrowBtn {
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  border-radius: 9px;
+  background-color: rgba(9, 2, 36, 0.1);
+}

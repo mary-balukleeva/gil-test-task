@@ -106,7 +106,8 @@
   left: 30px;
 }
 
-.controlBlock .MuiSwitch-root:hover .WithStyles\(ForwardRef\(Switch\)\)-track-11 {
+.controlBlock .MuiSwitch-root:hover .WithStyles\(ForwardRef\(Switch\)\)-track-11,
+.controlBlock .MuiSwitch-root:hover .jss9:not(.Mui-disabled) ~ .jss11 {
   background-color: blue;
 }
 

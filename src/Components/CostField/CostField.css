@@ -78,12 +78,11 @@
 
 .divAfterInput .content {
   max-width: 193px;
-  overflow-y: scroll;
   visibility: hidden;
-  letter-spacing: inherit;
   font-weight: 600;
   padding-right: 4px;
-  letter-spacing: 0.0638rem;
+  letter-spacing: 0.07em;
+  overflow: hidden;
 }
 
 .divAfterInput .caret {

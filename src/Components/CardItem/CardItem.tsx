@@ -1,11 +1,13 @@
 import React, { useState, useMemo } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, withStyles, Theme, createStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Switch from '@material-ui/core/Switch';
+import Grid from '@material-ui/core/Grid';
+import Typography from '@material-ui/core/Typography';
 
 import './CardItem.css';
 
@@ -26,9 +28,49 @@ const useStyles = makeStyles({
   }
 });
 
+const AntSwitch = withStyles((theme: Theme) =>
+  createStyles({
+    root: {
+      width: 30,
+      height: 20,
+      margin: 2,
+      padding: 2,
+      display: 'flex',
+    },
+    switchBase: {
+      padding: 4,
+      // paddingBottom: 6,
+      color: theme.palette.grey[500],
+      '&$checked': {
+        transform: 'translateX(8px)',
+        color: theme.palette.common.white,
+        '& + $track': {
+          opacity: 1,
+          backgroundColor: '#32207e',
+          borderColor: theme.palette.primary.main,
+        },
+      },
+    },
+    thumb: {
+      width: 14,
+      height: 14,
+      boxShadow: 'none',
+    },
+    track: {
+      border: `1px solid ${theme.palette.grey[500]}`,
+      borderRadius: 10,
+      opacity: 1,
+      backgroundColor: theme.palette.common.white,
+    },
+    checked: {},
+  }),
+)(Switch);
+
+
 export default function CardItem(props: any) {
   const { card, index, activeIndex } = props;
   const [hideAutoPay, setHideAutoPay] = useState(false);
+  const [isAutoPay, toggleAutoPay] = useState(false);
 
   const classes = useStyles();
 
@@ -38,6 +80,7 @@ export default function CardItem(props: any) {
 
   const toggleItem = () => {
     setHideAutoPay(!hideAutoPay);
+    toggleAutoPay(!isAutoPay);
   }
 
   const monthlyPayment = useMemo(() => {
@@ -93,14 +136,24 @@ export default function CardItem(props: any) {
         </CardActionArea>
         <div className="controlBlock">
           <div className="switchBlock">
-            <Switch
+            {/* <Switch
               size="small"
               color="primary"
               onClick={toggleItem}
               inputProps={{ 'aria-label': 'secondary checkbox' }}
               disabled={!switchEnabled}
-            />
-            <span>AutoPay via Bank Account</span>
+            /> */}
+            <Typography component="div">
+              <Grid component="label" container alignItems="center" spacing={1}>
+                <Grid item>
+                  <AntSwitch 
+                    disabled={!switchEnabled}
+                    checked={isAutoPay}
+                    onChange={toggleItem} />
+                </Grid>
+                <Grid item>AutoPay via Bank Account</Grid>
+              </Grid>
+            </Typography>
           </div>
           <Button className="chooseBtn" color="primary" variant="contained" onClick={() => onClick(card.note)}>
             CHOOSE

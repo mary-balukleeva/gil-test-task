@@ -94,6 +94,10 @@
   color: rgba(9, 2, 36, 0.5);
 }
 
+.switchBlock .MuiGrid-root.MuiGrid-item:hover .MuiSwitch-colorSecondary {
+  /* background-color: #32207e; */
+}
+
 .controlBlock {
   position: absolute;
   bottom: 30px;

@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/gil-test-task/static/css/main.2ec9d9f7.chunk.css",
+    "main.css": "/gil-test-task/static/css/main.e886e6cc.chunk.css",
     "main.js": "/gil-test-task/static/js/main.9834f10a.chunk.js",
     "main.js.map": "/gil-test-task/static/js/main.9834f10a.chunk.js.map",
     "runtime-main.js": "/gil-test-task/static/js/runtime-main.bbcbfbe6.js",
@@ -8,9 +8,9 @@
     "static/js/2.0253fe5a.chunk.js": "/gil-test-task/static/js/2.0253fe5a.chunk.js",
     "static/js/2.0253fe5a.chunk.js.map": "/gil-test-task/static/js/2.0253fe5a.chunk.js.map",
     "index.html": "/gil-test-task/index.html",
-    "precache-manifest.97ea888a082535a9bbd083bbf2d0a22e.js": "/gil-test-task/precache-manifest.97ea888a082535a9bbd083bbf2d0a22e.js",
+    "precache-manifest.5d81222d4298c3ca070b1ea53ff165b2.js": "/gil-test-task/precache-manifest.5d81222d4298c3ca070b1ea53ff165b2.js",
     "service-worker.js": "/gil-test-task/service-worker.js",
-    "static/css/main.2ec9d9f7.chunk.css.map": "/gil-test-task/static/css/main.2ec9d9f7.chunk.css.map",
+    "static/css/main.e886e6cc.chunk.css.map": "/gil-test-task/static/css/main.e886e6cc.chunk.css.map",
     "static/js/2.0253fe5a.chunk.js.LICENSE.txt": "/gil-test-task/static/js/2.0253fe5a.chunk.js.LICENSE.txt",
     "static/media/arrow_left.svg": "/gil-test-task/static/media/arrow_left.48bd8f7d.svg",
     "static/media/arrow_left_disabled.svg": "/gil-test-task/static/media/arrow_left_disabled.1dbcf59a.svg",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.bbcbfbe6.js",
     "static/js/2.0253fe5a.chunk.js",
-    "static/css/main.2ec9d9f7.chunk.css",
+    "static/css/main.e886e6cc.chunk.css",
     "static/js/main.9834f10a.chunk.js"
   ]
 }

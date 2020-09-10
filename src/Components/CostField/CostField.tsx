@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
 import TextField from '@material-ui/core/TextField';
+
+import dollarPng from '../../assets/images/dollar-input.png';
+import './CostField.css';
 
 export default function CostField() {
   const [cost, setCost] = useState('');
@@ -17,11 +19,15 @@ export default function CostField() {
 
     if (valueExistDot && valueExistDot.length > 1) { return; }
 
+    const decimalPart: any = value.match(/\.\d+/);    
+    const isInvalidDecimalLength: boolean = decimalPart && decimalPart[0].length > 4;
+    if (isInvalidDecimalLength) { return; }
+
     if (value && valueExistDot && valueExistDot.length && dotOnEnd) {
       return setCost(value);
     }
 
-    const number: number = +value.replace(/[^\d.]/g, '');
+    const number: number = +value.replace(/[^\d\.]/g, '');
 
     setCost(formatCurrency(number));
   }
@@ -37,7 +43,7 @@ export default function CostField() {
           value={cost}
           onChange={e => onCostChange(e.target.value)}
         />
-        <AttachMoneyIcon />
+        <img src={dollarPng} alt="dollar" />
 
       </div>
     </div>

@@ -26,6 +26,7 @@
 #cost-input {
   font-weight: 600;
   padding-right: 30px;
+  caret-color: purple;
 }
 
 .MuiFormControl-root.MuiTextField-root > label.MuiFormLabel-root.MuiInputLabel-root {

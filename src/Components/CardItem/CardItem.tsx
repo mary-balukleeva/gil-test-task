@@ -59,6 +59,15 @@ export default function CardItem(props: any) {
     return noAutoPay.monthlyPayment && noAutoPay.apr
   }, [card])
 
+  const formatCurrency = (currency: number): string => {
+    const format: any = new Intl.NumberFormat('en-us', {
+      minimumFractionDigits: 2,
+    });
+
+    const number: string = format.format(currency)
+    return number;
+  }
+
   return (
     <div className={index >= activeIndex && index <= activeIndex+2  ? 'active' : 'slide'}>
       <Card className={classes.root}>
@@ -67,7 +76,7 @@ export default function CardItem(props: any) {
             <div className="summaryBlock">
               <p className="summary">
                 <AttachMoneyIcon />
-                {monthlyPayment}
+                {formatCurrency(monthlyPayment)}
                 </p>
               <p className="summary-description">per month</p>
             </div>

@@ -4,8 +4,8 @@ import CardItem from '../CardItem/CardItem';
 import LeftArrow from './Arrows/LeftArrow';
 import RightArrow from './Arrows/RightArrow';
 
-import './Carroussel.css';
-function Carrossel(props: any) {
+import './Carousel.css';
+function Carousel(props: any) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [cardsLength] = useState(cards.length);
 
@@ -34,4 +34,4 @@ function Carrossel(props: any) {
   );
 }
 
-export default Carrossel;
+export default Carousel;

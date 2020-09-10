@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Carrossel from './Components/Carrossel/Carrossel';
+import Carousel from './Components/Carousel/Carousel';
 
 import './App.css';
 import CostField from './Components/CostField/CostField';
@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <CostField />
-      <Carrossel />
+      <Carousel />
     </div>
   );
 }

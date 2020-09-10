@@ -89,7 +89,6 @@
   width: 2px;
   height: 30px;
   visibility: visible;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   background-color: #c900e4;
   display: inline-block;
   animation: caret 1s ease-in-out infinite;

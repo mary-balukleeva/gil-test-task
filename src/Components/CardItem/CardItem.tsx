@@ -7,6 +7,8 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Switch from '@material-ui/core/Switch';
 
+import './CardItem.css';
+
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,

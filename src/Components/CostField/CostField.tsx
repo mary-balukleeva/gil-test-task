@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 import TextField from '@material-ui/core/TextField';
 
 import dollarPng from '../../assets/images/dollar-input.png';
@@ -23,11 +23,10 @@ export default function CostField() {
     const anyDotInField = valueExistDot && valueExistDot.length > 1;
     if (anyDotInField) { return; }
     
-    const dotOnEnd = /\.$/.test(value);
     const decimalPart: any = value.match(/\.\d+/);    
     const isInvalidDecimalLength: boolean = decimalPart && decimalPart[0].length > 4;
-
     if (isInvalidDecimalLength) { return; }
+    const dotOnEnd = /\.$/.test(value);
 
     const isEmptyOrEndOnDotValue = !value || (value && valueExistDot && valueExistDot.length && dotOnEnd);
     if (isEmptyOrEndOnDotValue) {
@@ -52,7 +51,7 @@ export default function CostField() {
           onFocus={() => toggleCaret(true)}
           onBlur={() => toggleCaret(false)}
         />
-        { visibleCaret && <div ref={divRef} className='divAfterInput' >
+        {visibleCaret && <div ref={divRef} className='divAfterInput' >
           <span className="content">{cost}</span>
           <div className="caret" />
         </div>}

@@ -12,20 +12,16 @@ code {
   margin-top: 10rem;
 }
 
-.MuiPaper-root {
-  padding-bottom: 30px;
-}
 
-.cardList {
-  max-width: 1320px;
-  display: flex;
-  justify-content: space-between;
-}
-.backArrow > button.MuiButtonBase-root {
-  width: 60px;
-  height: 60px;
-  border: none;
-}
+
+
+
+
+
+
+
+
+
 
 .backArrow > button.MuiButtonBase-root {
   width: 60px;
@@ -46,67 +42,17 @@ button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined:disabled {
   background-color: rgba(9, 2, 36, 0.1);
 }
 
-.active {
-  display: block;
-  margin: 0 15px;
-  width: 360px; 
-}
-
-.slide {
-  display: none;
-}
-
-.MuiSwitch-input {
-  background-color: blue !important;
-  color: blue !important;
-}
-
-.Rectangle {
-  background-image: url('./assets//images/card-baack.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 142.7px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.summaryBlock {
-  color: white;
-  text-align: left;
-  width: 220px;
-  margin: 0 46px 0 auto;
-  text-align-last: left;
-}
-
-.summaryBlock .summary {
-  font-size: 40px;
-  font-weight: 800;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: -1px;
-  margin: 0;
-}
-
-.summaryBlock .summary-description {
-  margin-top: 0;
-  font-size: 20px;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: -1px;
-}
-
-.summaryBlock svg {
-  transform: scale(1.7);
-}
-
 .backArrow {
   display: flex;
   align-items: center;
-  margin: 0 auto;
+}
+
+.backArrow:first-of-type {
+  margin: 0 15px 0 0;
+}
+
+.backArrow:last-of-type {
+  margin: 0 0 0 15px;
 }
 
 .Arrow {
@@ -120,84 +66,3 @@ button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined:disabled {
   border-radius: 9px;
   background-color: rgba(9, 2, 36, 0.1);
 }
-
-.MuiPaper-root.MuiCard-root .chooseBtn {
-  width: 80%;
-  height: 60px;
-  padding: 20px auto;
-  background-color: #32207e;
-  font-size: 13px;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 0.6px;
-}
-
-.cardInner {
-  width: 220px;
-  margin: 0 30px 0 auto;
-  text-align-last: left;
-}
-
-.cardInner .note {
-  font-size: 12px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: justify;
-  color: rgba(9, 2, 36, 0.5);
-}
-
-.MuiCardContent-root .title {
-  font-size: 32px;
-  font-weight: 800;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: -0.5px;
-  color: #3cb400;
-  margin: 0;
-}
-
-.MuiCardContent-root .subtitle {
-  font-size: 12px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: rgba(9, 2, 36, 0.5);
-  margin: 0;
-}
-
-.MuiPaper-root.MuiCard-root  {
-  height: 440px;
-  position: relative;
-  margin: 0 auto;
-}
-
-.switchBlock {
-  margin-top: auto;
-  width: 80%;
-  margin: 0 auto;
-  text-align: left;
-  margin-bottom: 15px;
-  font-size: 16px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: rgba(9, 2, 36, 0.5);
-}
-
-.controlBlock {
-  position: absolute;
-  bottom: 15px;
-  right: 15px;
-  left: 15px;
-}
-
-

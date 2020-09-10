@@ -2,6 +2,7 @@ import React from 'react';
 import Button from '@material-ui/core/Button';
 
 import arrow from '../../../assets/images/arrow_left.svg';
+import arrowDisabled from '../../../assets/images/arrow_left_disabled.svg';
 import './Arrow.css';
 
 const LeftArrow = (props: any) => {
@@ -11,7 +12,7 @@ const LeftArrow = (props: any) => {
     <div className='backArrow'>
       <Button color="primary" onClick={goToPrevSlide} variant="outlined" disabled={!activeIndex}>
 
-        <img src={arrow} className="Arrow" alt="arrow" />
+        <img src={activeIndex ? arrow : arrowDisabled} className="Arrow" alt="arrow" />
       </Button>
     </div>
   )

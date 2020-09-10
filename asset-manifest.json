@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/gil-test-task/static/css/main.1412bcc4.chunk.css",
-    "main.js": "/gil-test-task/static/js/main.1a48d0f8.chunk.js",
-    "main.js.map": "/gil-test-task/static/js/main.1a48d0f8.chunk.js.map",
+    "main.css": "/gil-test-task/static/css/main.8cd9ec76.chunk.css",
+    "main.js": "/gil-test-task/static/js/main.28b31acd.chunk.js",
+    "main.js.map": "/gil-test-task/static/js/main.28b31acd.chunk.js.map",
     "runtime-main.js": "/gil-test-task/static/js/runtime-main.bbcbfbe6.js",
     "runtime-main.js.map": "/gil-test-task/static/js/runtime-main.bbcbfbe6.js.map",
-    "static/js/2.277affcf.chunk.js": "/gil-test-task/static/js/2.277affcf.chunk.js",
-    "static/js/2.277affcf.chunk.js.map": "/gil-test-task/static/js/2.277affcf.chunk.js.map",
+    "static/js/2.702af298.chunk.js": "/gil-test-task/static/js/2.702af298.chunk.js",
+    "static/js/2.702af298.chunk.js.map": "/gil-test-task/static/js/2.702af298.chunk.js.map",
     "index.html": "/gil-test-task/index.html",
-    "precache-manifest.776de2147aee67456ab055e2edf24c62.js": "/gil-test-task/precache-manifest.776de2147aee67456ab055e2edf24c62.js",
+    "precache-manifest.a7715c7f48d3fd26128703fcc049bb07.js": "/gil-test-task/precache-manifest.a7715c7f48d3fd26128703fcc049bb07.js",
     "service-worker.js": "/gil-test-task/service-worker.js",
-    "static/css/main.1412bcc4.chunk.css.map": "/gil-test-task/static/css/main.1412bcc4.chunk.css.map",
-    "static/js/2.277affcf.chunk.js.LICENSE.txt": "/gil-test-task/static/js/2.277affcf.chunk.js.LICENSE.txt",
+    "static/css/main.8cd9ec76.chunk.css.map": "/gil-test-task/static/css/main.8cd9ec76.chunk.css.map",
+    "static/js/2.702af298.chunk.js.LICENSE.txt": "/gil-test-task/static/js/2.702af298.chunk.js.LICENSE.txt",
     "static/media/arrow_left.svg": "/gil-test-task/static/media/arrow_left.48bd8f7d.svg",
     "static/media/arrow_right.svg": "/gil-test-task/static/media/arrow_right.845e73a4.svg",
-    "static/media/index.css": "/gil-test-task/static/media/card-baack.907458b4.png"
+    "static/media/CardItem.css": "/gil-test-task/static/media/card-baack.907458b4.png"
   },
   "entrypoints": [
     "static/js/runtime-main.bbcbfbe6.js",
-    "static/js/2.277affcf.chunk.js",
-    "static/css/main.1412bcc4.chunk.css",
-    "static/js/main.1a48d0f8.chunk.js"
+    "static/js/2.702af298.chunk.js",
+    "static/css/main.8cd9ec76.chunk.css",
+    "static/js/main.28b31acd.chunk.js"
   ]
 }

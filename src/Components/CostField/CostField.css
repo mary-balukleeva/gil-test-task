@@ -10,6 +10,7 @@
   position: relative;
   margin: 0 auto;
   width: 247px;
+  box-shadow: 0 2px 4px 0 rgba(236, 238, 246, 0.6);
 }
 
 .cost-form img {
@@ -40,8 +41,23 @@
   border-color: black;
 }
 
-.cost-form .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline:hover {
-  border-color: black;
+.cost-form .MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-formControl:hover .MuiOutlinedInput-notchedOutline {
+  border: solid 1px #2800f0;
 }
 
-.cost-form  {}
+.cost-form .MuiFormControl-root.MuiTextField-root:hover > label.MuiFormLabel-root.MuiInputLabel-root {
+  color: #2800f0;
+}
+
+.cost-form .MuiFormControl-root.MuiTextField-root > label.MuiFormLabel-root.MuiInputLabel-root {
+  color: rgba(9, 2, 36, 0.5);
+  font-weight: 500;
+}
+
+.cost-form .MuiFormControl-root.MuiTextField-root .MuiFormLabel-root {
+  color: rgba(0, 0, 0, 0.23);
+}
+
+.cost-form .MuiOutlinedInput-notchedOutline {
+  transition: all ease .4s;
+}

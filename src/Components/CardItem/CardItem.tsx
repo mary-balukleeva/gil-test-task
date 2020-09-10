@@ -39,10 +39,9 @@ const AntSwitch = withStyles((theme: Theme) =>
     },
     switchBase: {
       padding: 4,
-      // paddingBottom: 6,
       color: theme.palette.grey[500],
       '&$checked': {
-        transform: 'translateX(8px)',
+        transform: 'translateX(10px)',
         color: theme.palette.common.white,
         '& + $track': {
           opacity: 1,
@@ -52,15 +51,16 @@ const AntSwitch = withStyles((theme: Theme) =>
       },
     },
     thumb: {
-      width: 14,
-      height: 14,
+      width: 12,
+      height: 12,
       boxShadow: 'none',
+      backgroundColor: 'white',
     },
     track: {
-      border: `1px solid ${theme.palette.grey[500]}`,
+      // border: `1px solid ${theme.palette.grey[500]}`,
       borderRadius: 10,
       opacity: 1,
-      backgroundColor: theme.palette.common.white,
+      backgroundColor: 'grey',
     },
     checked: {},
   }),
@@ -136,13 +136,6 @@ export default function CardItem(props: any) {
         </CardActionArea>
         <div className="controlBlock">
           <div className="switchBlock">
-            {/* <Switch
-              size="small"
-              color="primary"
-              onClick={toggleItem}
-              inputProps={{ 'aria-label': 'secondary checkbox' }}
-              disabled={!switchEnabled}
-            /> */}
             <Typography component="div">
               <Grid component="label" container alignItems="center" spacing={1}>
                 <Grid item>

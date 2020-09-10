@@ -56,8 +56,11 @@
 
 .summaryBlock .summary-description {
   margin: 0;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 500;
   letter-spacing: -1px;
+  font-family: 'Manrope', sans-serif;
+
 }
 
 .MuiCardContent-root .title {
@@ -72,12 +75,14 @@
   font-size: 12px;
   font-weight: 500;
   color: rgba(9, 2, 36, 0.5);
+  font-family: 'Manrope', sans-serif;
   margin: 0;
 }
 
 .cardInner .note {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 500;
+  font-family: 'Manrope', sans-serif;
   text-align: justify;
   color: rgba(9, 2, 36, 0.5);
   margin-bottom: 34px;
@@ -88,14 +93,10 @@
   width: 80%;
   margin: 0 0 30px 8px;
   text-align: left;
-  font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Manrope', sans-serif;
+  font-size: 18px;
   font-weight: 500;
   color: rgba(9, 2, 36, 0.5);
-}
-
-.switchBlock .MuiGrid-root.MuiGrid-item:hover .MuiSwitch-colorSecondary {
-  /* background-color: #32207e; */
 }
 
 .controlBlock {

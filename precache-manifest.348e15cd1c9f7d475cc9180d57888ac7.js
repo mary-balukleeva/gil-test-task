@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "65b1562f3ed49f492923f4192fff1c54",
+    "revision": "4dd9a190630eaaadf56528ce603d80e1",
     "url": "/gil-test-task/index.html"
   },
   {
-    "revision": "ee5ff824a9a394ac3425",
-    "url": "/gil-test-task/static/css/main.8fd2b13f.chunk.css"
+    "revision": "256c4ac2409b87c2e337",
+    "url": "/gil-test-task/static/css/main.16f7e709.chunk.css"
   },
   {
     "revision": "f4df7246f68c11f65e5c",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/gil-test-task/static/js/2.0253fe5a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ee5ff824a9a394ac3425",
-    "url": "/gil-test-task/static/js/main.712cda6e.chunk.js"
+    "revision": "256c4ac2409b87c2e337",
+    "url": "/gil-test-task/static/js/main.9834f10a.chunk.js"
   },
   {
     "revision": "013e50ba7b895ed803d8",

@@ -27,7 +27,7 @@
 #cost-input {
   font-weight: 600;
   padding-right: 40px;
-  caret-color: purple;
+  caret-color: transparent;
   cursor: pointer;
 }
 
@@ -63,4 +63,43 @@
 
 .cost-form .MuiOutlinedInput-notchedOutline {
   transition: all ease .4s;
+}
+
+.divAfterInput {
+  max-width: 200px;
+  width: auto;
+  display: inline-block;
+  position: absolute;
+  top: 11.5px;
+  left: 14px;
+  overflow: auto;
+  display: flex;
+}
+
+.divAfterInput .content {
+  max-width: 193px;
+  overflow-y: scroll;
+  visibility: hidden;
+  letter-spacing: inherit;
+  font-weight: 600;
+  padding-right: 4px;
+  letter-spacing: 0.0638rem;
+}
+
+.divAfterInput .caret {
+  width: 2px;
+  height: 30px;
+  visibility: visible;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  background-color: #c900e4;
+  display: inline-block;
+  animation: caret 1s ease-in-out infinite;
+  transition: 0s;
+}
+
+@keyframes caret {
+  0% { background-color: purple; }
+  49% { background-color: purple; }
+  50% { background-color: transparent; }
+  100% { background-color: transparent; }
 }

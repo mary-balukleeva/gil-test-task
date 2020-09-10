@@ -20,13 +20,15 @@
   bottom: 17px;
   width: 20px;
   height: 20px;
-  object-fit: contain
+  object-fit: contain;
+  pointer-events: none;
 }
 
 #cost-input {
   font-weight: 600;
-  padding-right: 30px;
+  padding-right: 40px;
   caret-color: purple;
+  cursor: pointer;
 }
 
 .MuiFormControl-root.MuiTextField-root > label.MuiFormLabel-root.MuiInputLabel-root {
